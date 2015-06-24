@@ -6,7 +6,7 @@ Since 2000, I have dealt with HTML, CSS, Javascript and server side technologies
 It gave me opportunities on heading my own project teams as well as working within client's workforce, under their project management policies, mostly agile methodologies like Scrum.
 Now living in Sydney, I am already working as a PHP developer in a law company.
 
-## I Can Work For You
+# I Can Work For You
 
 It is a simple project to show my background in Java and PHP.
 
@@ -21,6 +21,14 @@ The PHP part loads a framework that I developed years ago. You can find out more
 at [FacilMVC](https://github.com/phppe/FacilMVC).
 
 
+## How to use
+
+1. Java codes were created using Eclipse. You can copy src and php folder to your new Eclipse project and execute au.com.yourcompany.NeedsMe
+2. Select a path to your php executable file
+3. Click on start button to start the Socket. The port 8001 needs to be free (I am not yet completely resilient, sorry).
+4. Open the browser and access http://localhost:8001
+5. Enjoy!
+
 ## Java Features
 
 * Fundamental (class, object, interface, exception, inner class)
@@ -29,7 +37,7 @@ at [FacilMVC](https://github.com/phppe/FacilMVC).
 * Threads 
 * Sockets
 * Calling native processes
-* Link to my course abou JSF at Udemy.com. [www.udemy.com/jsf-java-server-faces-20](http://www.udemy.com/jsf-java-server-faces-20)
+* Link to my course about JSF at Udemy.com. [www.udemy.com/jsf-java-server-faces-20](http://www.udemy.com/jsf-java-server-faces-20)
 * Link to my slides about Java Certification and Android at SlideShare. [www.slideshare.net/joseberardo](http://www.slideshare.net/joseberardo)
 
 
@@ -43,7 +51,6 @@ at [FacilMVC](https://github.com/phppe/FacilMVC).
 * Apache mod_rewrite
 * minifying javascript and css
 * Reflection
-
 * Simple example using oembed sites
 
 
@@ -52,7 +59,7 @@ at [FacilMVC](https://github.com/phppe/FacilMVC).
 * Source: https://github.com/berardo/ICanWorkForYou
 * Facil MVC: https://github.com/phppe/FacilMVC
 * Prologue: http://html5up.net/prologue (I am using a third part free template)
-
+* Especializa: https://ead.especializa.comm.br (This Java HTTP server is not a complete HTTP server, therefore I've put all static content like images, JS and CSS on other server)
 
 ## License
 
