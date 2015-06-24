@@ -1,54 +1,67 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# [Jose Berardo Cunha](https://au.linkedin.com/in/joseberardo)
 
-HTML5 Boilerplate is a professional front-end template that helps you build fast, robust, adaptable, and future-proof websites. Spend more time developing and less time reinventing the wheel.
+A passionate web enthusiast and a senior software developer.
 
-This project is the product of many years of iterative development and combined community knowledge. It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
+Since 2000, I have dealt with HTML, CSS, Javascript and server side technologies around PHP and Java. Throughout these years, I have assumed different roles like web development, team leadership, external consulting/mentoring, software architecture and teaching. Over the last ten years, I have managed a company focused on web development and mainly on training.
+It gave me opportunities on heading my own project teams as well as working within client's workforce, under their project management policies, mostly agile methodologies like Scrum.
+Now living in Sydney, I am already working as a PHP developer in a law company.
 
+## I Can Work For You
 
-## Quick start
+It is a simple project to show my background in Java and PHP.
 
-Clone the git repo - `git clone git://github.com/h5bp/html5-boilerplate.git` - or [download it](https://github.com/h5bp/html5-boilerplate/zipball/master)
+It is compounded by a Java desktop application that simulates a web server.
+Under [src](https://github.com/berardo/ICanWorkForYou/tree/master/src/) directory you find all Java sources.
+A swing JFrame with buttons to start and stop a Socket. When you click at the start button, it will create
+a ServerSocket at port 8001 (it must not be in use).
 
+After that, open the address http://localhost:8001 and enjoy the PHP part of the project.
 
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* CSS normalizations and common bug fixes.
-* IE-specific classes for easier cross-browser control.
-* A default print stylesheet, performance optimized.
-* Mobile browser optimizations.
-* Protection against any stray `console.log` causing JavaScript errors in IE6/7.
-* The latest jQuery via CDN, with a local fallback.
-* A custom Modernizr build for feature detection.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+The PHP part loads a framework that I developed years ago. You can find out more about this framework 
+at [FacilMVC](https://github.com/phppe/FacilMVC).
 
 
-## Contributing
+## Java Features
 
-Anyone and everyone is welcome to [contribute](https://github.com/h5bp/html5-boilerplate/wiki/contribute). Hundreds of developers have helped make the HTML5 Boilerplate what it is today.
+* Fundamental (class, object, interface, exception, inner class)
+* Swing (JFrame, other gui components, listeners)
+* Strings (regular expressions, formatting)
+* Threads 
+* Sockets
+* Calling native processes
+* Link to my course abou JSF at Udemy.com. [www.udemy.com/jsf-java-server-faces-20](http://www.udemy.com/jsf-java-server-faces-20)
+* Link to my slides about Java Certification and Android at SlideShare. [www.slideshare.net/joseberardo](http://www.slideshare.net/joseberardo)
+
+
+## PHP Features
+
+* So many features inside FacilMVC:
+** Design patterns (eg. MVC, front-controller, registry)
+** Regular Expressions
+** Libs (eg. cURL, Doctrine)
+** i18n
+** Apache mod_rewrite
+** minifying javascript and css
+** Reflection
+* Simple example using oembed sites
 
 
 ## Project information
 
-* Source: http://github.com/h5bp/html5-boilerplate
-* Web: http://html5boilerplate.com
-* Docs: http://html5boilerplate.com/docs
-* Twitter: http://twitter.com/h5bp
+* Source: https://github.com/berardo/ICanWorkForYou
+* Facil MVC: https://github.com/phppe/FacilMVC
+* Prologue: http://html5up.net/prologue (I am using a third part free template)
 
 
 ## License
 
 ### Major components:
 
-* jQuery: MIT/GPL license
-* Modernizr: MIT/BSD license
-* Normalize.css: Public Domain
+* jQuery
+* Modernizr
+* Prologue
+* Bootstrap
+* FacilMVC
 
 ### Everything else:
 
