@@ -10,7 +10,7 @@ Now living in Sydney, I am already working as a PHP developer in a law company.
 
 It is a simple project to show my background in Java and PHP.
 
-It is compounded by a Java desktop application that simulates a web server.
+It is compounded by a Java desktop application that simulates a web server and a PHP site to show informations about me.
 Under [src](https://github.com/berardo/ICanWorkForYou/tree/master/src/) directory you find all Java sources.
 A swing JFrame with buttons to start and stop a Socket. When you click at the start button, it will create
 a ServerSocket at port 8001 (it must not be in use).
@@ -36,13 +36,14 @@ at [FacilMVC](https://github.com/phppe/FacilMVC).
 ## PHP Features
 
 * So many features inside FacilMVC:
-** Design patterns (eg. MVC, front-controller, registry)
-** Regular Expressions
-** Libs (eg. cURL, Doctrine)
-** i18n
-** Apache mod_rewrite
-** minifying javascript and css
-** Reflection
+* Design patterns (eg. MVC, front-controller, registry)
+* Regular Expressions
+* Libs (eg. cURL, Doctrine)
+* i18n
+* Apache mod_rewrite
+* minifying javascript and css
+* Reflection
+
 * Simple example using oembed sites
 
 
@@ -55,10 +56,9 @@ at [FacilMVC](https://github.com/phppe/FacilMVC).
 
 ## License
 
-### Major components:
+### Other components:
 
 * jQuery
-* Modernizr
 * Prologue
 * Bootstrap
 * FacilMVC

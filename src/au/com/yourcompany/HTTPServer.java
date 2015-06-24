@@ -60,10 +60,14 @@ public class HTTPServer {
 					writer.println("Server: Jose's Server");
 					writer.println("Date: " + new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
 					writer.println("Content-type: text/html; charset=utf8");
+					// Granting access to scripts from this address (I am not creating a real HTTP server, so all of my 
+					// static web files (css, js ...) will be in this address
+					writer.println("Access-Control-Allow-Origin: *");
 					
 					// Calling PHP interpreter
 					File f = new File(".");
 					System.out.println();
+
 					String command = String.format("%s %s/php/index.php %s", getPHPPath(), f.getAbsolutePath(), url);
 					Process p = Runtime.getRuntime().exec(command);
 					BufferedReader commandReader = new BufferedReader(new InputStreamReader(p.getInputStream()));
