@@ -33,6 +33,7 @@ public class HTTPServer {
 					
 					// Receiving request
 					back.onActionStart(Status.ON_REQUEST);
+					msg = "Client connected: " + sock.getInetAddress().getHostAddress();
 					BufferedReader reader = new BufferedReader(new InputStreamReader(sock.getInputStream()));
 					String line;
 					
@@ -85,8 +86,8 @@ public class HTTPServer {
 				}
 			}
 		} catch (Exception e) {
-			back.onActionStart(Status.ON_SOCKET_FAILURE);
 			setMsg(e.getMessage());
+			back.onActionStart(Status.ON_SOCKET_FAILURE);
 			e.printStackTrace();
 		}
 	}
@@ -136,7 +137,6 @@ public class HTTPServer {
 	}
 
 	public static enum Status {
-		BEFORE_RUN, BEFORE_STOP, ON_REQUEST, ON_SOCKET_FAILURE,
-		BEFORE_EXECUTE
+		BEFORE_RUN, BEFORE_STOP, ON_REQUEST, ON_SOCKET_FAILURE
 	}
 }

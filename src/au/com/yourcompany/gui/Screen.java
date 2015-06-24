@@ -9,17 +9,19 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import au.com.yourcompany.HTTPServer;
 import au.com.yourcompany.HTTPServer.Status;
 import au.com.yourcompany.HTTPServerListener;
-import au.com.yourcompany.HTTPServer;
 
 public class Screen extends JFrame implements HTTPServerListener {
 
@@ -30,6 +32,7 @@ public class Screen extends JFrame implements HTTPServerListener {
 	private JTextField txtPHPPath;
 	private JButton start;
 	private JButton stop;
+	private String lblMsg = "Choose your PHP path to execute the server";
 	
 	public Screen() {
 		server = new HTTPServer();
@@ -49,7 +52,7 @@ public class Screen extends JFrame implements HTTPServerListener {
 		// Creating objects
 		lblTitle = new JLabel("This is the console to start and stop the service");
 		lblTitle.setFont(new Font("Helvetica", Font.BOLD, 20));
-		lblPHPPath = new JLabel("Choose your PHP path to execute the server");
+		lblPHPPath = new JLabel(lblMsg);
 		
 		txtPHPPath = new JTextField("/usr/bin/php", 30);
 		server.setPHPPath(txtPHPPath.getText());
@@ -125,13 +128,36 @@ public class Screen extends JFrame implements HTTPServerListener {
 
 	@Override
 	public void onActionStart(Status status) {
-		// TODO Auto-generated method stub
+		switch (status) {
+		case BEFORE_RUN:
+			lblPHPPath.setText("Starting Server. Connect through any browser");
+			break;
+		case ON_REQUEST:
+			lblPHPPath.setText(server.getMsg());
+			final Timer t = new Timer();
+			t.scheduleAtFixedRate(new TimerTask() {
+				@Override
+				public void run() {
+					lblPHPPath.setText(lblMsg);
+					t.cancel();
+				}
+			}, 5000, 5000);
+			break;
+		case ON_SOCKET_FAILURE:
+			JOptionPane.showMessageDialog(Screen.this, server.getMsg(), "Server Error", JOptionPane.ERROR_MESSAGE);
+			start.setEnabled(true);
+			stop.setEnabled(false);
+			
+			break;
+
+		default:
+			break;
+		}
 		
 	}
 
 	@Override
 	public void onActionStop(Status status) {
-		// TODO Auto-generated method stub
 		
 	}
 
